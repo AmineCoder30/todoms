@@ -20,8 +20,12 @@ Make sure you have the required environment variables. Typically, there’s a .e
 
 3. Run the Backend
 Navigate to the backend directory and run:
+
+\n
 **cd ../path/to/todoms/server**
 and run :
+
+
 **npm start**
 
 This should start your backend server.
