@@ -1,4 +1,4 @@
-To run the downloaded the project on your laptop, follow these steps:
+To run the  project on your laptop, follow these steps:
 
 1. Install Dependencies
 You need to install the necessary packages for both the frontend (React) and backend (Node.js + Express).
