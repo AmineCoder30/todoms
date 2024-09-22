@@ -6,13 +6,13 @@ You need to install the necessary packages for both the frontend (React) and bac
 a. Navigate to the Backend Directory(./server):
 **cd ../path/to/todoms/server** 
 Then, run:
-npm install
+**npm install**
 This installs all the backend dependencies listed in package.json.
 
 b. Navigate to the Frontend Directory(./client):
 **cd ../path/to/todoms/client** 
 Then, run:
-npm install
+**npm install**
 This installs all the frontend dependencies.
 
 2. Set Up Environment Variables
@@ -21,7 +21,6 @@ Make sure you have the required environment variables. Typically, there’s a .e
 3. Run the Backend
 Navigate to the backend directory and run:
 
-\n
 **cd ../path/to/todoms/server**
 and run :
 
@@ -38,4 +37,4 @@ This should start the frontend React app on a local development server.
 5. Database Setup
 If the project uses MongoDB, ensure MongoDB is running on your machine or via a cloud service like MongoDB Atlas. If it’s a local MongoDB, you may need to run:
 
-mongod
+**mongod**
