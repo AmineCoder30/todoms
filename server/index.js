@@ -19,7 +19,7 @@ app.use(
   })
 );
 const Port = process.env.PORT;
-const Host = process.env.DATABASE8_HOST;
+const Host = process.env.MONGODB_URI;
 app.get("/", (request, response) => {
   console.log(request);
   return response.status(234).send("welcome to my todo list app");
