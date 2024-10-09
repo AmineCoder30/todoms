@@ -1,12 +1,15 @@
 import React, { useState } from "react";
-import { CiUser } from "react-icons/ci";
+import { CiLogout } from "react-icons/ci";
 import { RxCross2 } from "react-icons/rx";
-
+import { useNavigate } from "react-router-dom";
 import navbarList from "../tools/NavbarList";
 
 function NavBar({ filterName, setfilterName, setshowNavbar, showNavbar }) {
-  const { user } = JSON.parse(localStorage.getItem("user"));
-  console.log(user);
+  const navigate = useNavigate();
+  const handlLogOut = () => {
+    localStorage.clear();
+    navigate("/");
+  };
   return (
     <div
       className={`filters  z-50 h-[520px] bg-[#18181c] w-[250px] py-[20px]
@@ -46,13 +49,14 @@ function NavBar({ filterName, setfilterName, setshowNavbar, showNavbar }) {
           );
         })}
       </ul>
-      <div className="flex items-center gap-2 absolute bottom-0 left-0 p-3">
+      <div
+        className="flex items-center gap-2 absolute bottom-0 left-0 p-3 cursor-pointer"
+        onClick={handlLogOut}
+      >
         <div className="icon_user rounded p-[5xp]">
-          <CiUser />
+          <CiLogout />
         </div>
-        <h4 className="text-[17px] text-[#898acc]  capitalize ">
-          {user && user?.userName?.slice(0, 10)}
-        </h4>
+        <h4 className="text-[17px] text-white  capitalize ">disconnect</h4>
       </div>
     </div>
   );

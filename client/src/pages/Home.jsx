@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import done from "../assets/done.svg";
+import { useNavigate } from "react-router-dom";
 function Home() {
+  const user = JSON.parse(localStorage.getItem("user"));
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (user) {
+      navigate("/todos");
+    }
+  }, []);
   return (
     <section className=" relative pt-20 ">
       <header className=" flex justify-between items-center py-4 px-14 absolute top-0 left-0 w-full">
