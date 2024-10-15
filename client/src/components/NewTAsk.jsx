@@ -37,7 +37,7 @@ function NewTAsk({ type, showForm, setshowForm }) {
   const handleSubmit = () => {
     if (type === "create") {
       dispatch(
-        createTask({ content, date, priority, status, userid: user._id })
+        createTask({ content, date, priority, status, userid: user?.user?._id })
       );
     } else {
       dispatch(
@@ -47,7 +47,7 @@ function NewTAsk({ type, showForm, setshowForm }) {
           date,
           priority,
           status,
-          userid: user._id,
+          userid: user?.user?._id,
         })
       );
     }

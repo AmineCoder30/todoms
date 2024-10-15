@@ -40,7 +40,7 @@ function Login() {
       <div className="inner-form flex flex-col justify-center items-center p-[7px] w-[300px]">
         <div className="form_title">login</div>
         <h1 className="logo text-white text-[30px] font-bold mb-3">
-          Todo.<span className="text-[#704BEC]">ms</span>
+          Todo<span className="text-[#704BEC]">ms</span>
         </h1>
         <form action="">
           <label htmlFor="userName">userName:</label>

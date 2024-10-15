@@ -53,7 +53,7 @@ function Singin() {
         <div className="inner-form bg-[#18181c] flex flex-col justify-center items-center gap-2 p-[7px] w-[300px]">
           <div className="form_title">create acount</div>
           <h1 className="logo text-white text-[30px] font-bold mb-3">
-            Todo.<span className="text-[#704BEC]">ms</span>
+            Todo<span className="text-[#704BEC]">ms</span>
           </h1>
           <form>
             <label htmlFor="gmail">gmail:</label>

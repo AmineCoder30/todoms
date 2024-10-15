@@ -20,7 +20,7 @@ const Todos = ({ userInfo }) => {
   useEffect(() => {
     if (user) {
       setLoading(true);
-      dispatch(fetchTasks(user._id));
+      dispatch(fetchTasks(user?.user?._id));
       setLoading(false);
     } else {
       navigate("/singin");
